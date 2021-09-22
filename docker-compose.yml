@@ -1,0 +1,9 @@
+services:
+  static-web:
+    build: .
+    image: ghcr.io/paszln/static-web:dev
+    ports:
+      - "8080:80"
+    environment:
+      SERVICE_VERSION: v1
+      
